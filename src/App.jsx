@@ -6,12 +6,13 @@ import { TodoInput } from './components/TodoInput';
 import { TodoList } from './components/TodoList';
 
 function App() {
-  const todos = {
+  const todos = [
     {input:'Hello! Add your first todo!',complete:true},
     {input:'Get the groceries!',complete:false},
     {input:'Learn React!',complete:false},
     {input:'Say hi to friends!',complete:true},
-  }
+    {input:'HEYYYYYYYYYYYYYYYY',complete:true},
+  ]
   return (
     <div>
       <Header todos={todos}/>
