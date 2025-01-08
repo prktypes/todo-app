@@ -11,14 +11,13 @@ function App() {
     {input:'Get the groceries!',complete:false},
     {input:'Learn React!',complete:false},
     {input:'Say hi to friends!',complete:true},
-    {input:'HEYYYYYYYYYYYYYYYY',complete:true},
   ]
   return (
     <div>
       <Header todos={todos}/>
       <Tabs todos={todos}/>
       <TodoList todos={todos}/>
-      <TodoInput todos={todos}/>
+      <TodoInput/>
     </div>
   )
 }
