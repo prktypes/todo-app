@@ -1,5 +1,5 @@
-export function Header(props){
-    const { todos } = props 
+ export function Header(props){//receiving props
+    const { todos } = props //label is assgined
     const todosLength = todos.length
 
     const isTasksPlural = todos.length != 1
