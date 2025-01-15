@@ -11,7 +11,6 @@ function App() {
   //   {input:'Hello! Add your first todo!',complete:true},
   //   {input:'Get the groceries!',complete:false},
   //   {input:'Learn React!',complete:false},
-  //   {input:'Say hi to friends!',complete:true},
   // ]
 
   const [todos,setTodos] = useState([
