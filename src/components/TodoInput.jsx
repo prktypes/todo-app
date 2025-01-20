@@ -8,7 +8,11 @@ export function TodoInput(props){
             <input value={inputValue} onChange={(e)=>{
                 setInputValue(e.target.value)
             }} placeholder="Add task"/>
-            <button onClick={handleAddTodo}>
+            <button onClick={()=>{
+                if(!inputValue){return}
+                handleAddTodo(inputValue)
+                setInputValue('')
+            }}>
                 <i className="fa-solid fa-plus"></i>
             </button>
         </div>
