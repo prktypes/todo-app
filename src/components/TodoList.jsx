@@ -13,7 +13,7 @@ export function TodoList(props){
                 return(
                     <TodoCard 
                     key={todoIndex}
-                    todoIndex={todoIndex}
+                    todoIndex={todos.findIndex(val=>val.input===todo.input)}
                     {...props}
                     todo={todo}/> //this {...} syntax means -> it says whaterver my parent is receiving send them down to me(children) too
                 )
